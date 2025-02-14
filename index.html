@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png"  href="assets/images/image1-32x32.png">
+    <title>Frontend Mentor | Contact-form</title>
+</head>
+<body>
+    <div class="toast hidden">
+        <div>
+            <img src="assets/images/image2.svg" alt="toast check">
+            <span>Message sent!</span>
+        </div>
+        <p>Thank you for completing the form, We'll be in touch soon!</p>
+    </div>
+
+    <div class="form-container">
+        <h1>Contact Us</h1>
+        <form class="form">
+
+            <div class="name-inputs">
+
+                <div class="form-group">
+                    <label for="">First Name <span class="star">*</span></label>
+                    <input type="text" name="" id="first-name" aria-required="true">
+                    <span class="error hidden">This field is required</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Last Name <span class="star">*</span></label>
+                    <input type="text" name="" id="last-name" aria-required="true">
+                    <span class="error hidden">This field is required</span>
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="">Email Address <span class="star">*</span></label>
+                <input type="email" name="" id="email" aria-required="true">
+                <span class="error valid hidden">Please enter a valid email address</span>
+                <span class="error empty hidden">This field is required</span>
+            </div>
+
+            <div class="form-group radio">
+                <label for="querry">Querry Type <span class="star">*</span></label>
+
+                <div id="querry">
+
+                    <div class="querry-type">
+                        <input type="radio" name="querry-type" id="option1" name="querry-type" aria-required="true">
+                        <label for="option1">General Enquiry</label>
+                    </div>
+                    <div class="querry-type">
+                        <input type="radio" name="querry-type" id="option2" name="querry-type" aria-required="true">
+                        <label for="option2"> Support Enquiry</label>
+                    </div>
+                </div>
+                <span class="error hidden">Please select a querry type</span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message <span class="star">*</span></label>
+                <textarea name="message" id="message" rows="4" aria-required="true"></textarea>
+                <span class="error hidden">This field is required</span>
+            </div>
+
+            <div class="form-group checkbox">
+
+                <div>
+                    <input type="checkbox" name="" id="consent" aria-required="true">
+                    <label for="consent"
+                    >I agree to being contacted by the team <span class="star">*</span></label>
+                </div>
+                <span class="error hidden">To submit this form, please consent to being contacted by the team</span>
+
+            </div>
+
+            <button type="submit">submit</button>
+
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+                Coded by <a href="https://github.com/ElijahBlessing">Elijah Blessing</a>.
+              </div>
+            
+
+        </form>
+    </div>
+
+
+  <script src="index.js"></script>  
+</body>
+</html>
