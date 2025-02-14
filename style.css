@@ -165,6 +165,14 @@ span.hidden {
     gap: 10px;
     margin-bottom: 15px;
 }
+.toast p{
+    margin-bottom: 10px;
+    margin-left: 6px;
+}
+.toast-body {
+    margin: 10px;
+
+}
 
 .toast img {
     width: 14px;
